@@ -1,5 +1,13 @@
-# PHP 8.0 Docker
+# PHP 8.0 Docker with JIT
 
-PHP 8.0 docker image built on Alpine Linux
+Docker Unofficial Image packaging for PHP 
 
+Run:
+```bash
+docker run -it akondas/php:8.0-cli-alipne
+```
 
+Run with enabled JIT:
+```bash
+docker run -it akondas/php:8.0-cli-alipne -dzend_extension=opcache.so -dopcache.enable_cli=1 -dopcache.jit_buffer_size=500000000 -dopcache.jit=1235
+```
