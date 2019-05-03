@@ -122,6 +122,7 @@ RUN set -xe \
 		--with-libedit \
 		--with-openssl \
 		--with-zlib \
+		--enable-pcntl \
 		--enable-opcache \
 		\
 # bundled pcre does not support JIT on s390x
